@@ -37,7 +37,7 @@ body {
 h1 {
     font-family: "Merienda", cursive;
     color: #212529;
-    font-size: 6rem;
+    font-size: 5.1rem;
     font-weight: 800;
     line-height: 1;
 }
@@ -54,7 +54,7 @@ h2 {
 button {
     background-color: var(--primaryColor);
     color: var(--lightColor);
-
+    font-size: 2.2rem;
     cursor: pointer;
     border: none;
     /* border-radius: 0.5rem; */
@@ -280,11 +280,6 @@ footer {
     padding: 0rem 3.5rem;
 }
 
-.logoBox {
-    /* border: 1px solid black; */
-    margin: 2rem 0rem 0rem 10rem;
-}
-
 
 /* hamburger */
 
@@ -296,7 +291,8 @@ footer {
     color: #333333;
     font-size: 2rem;
     border: 1.5px solid #002239;
-    margin: 0.25rem 0.75rem 0.1rem;
+    margin: 0.25rem 0.75rem 0.25rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.25rem;
 }
 
@@ -313,12 +309,6 @@ footer {
 
 /* Hero Section code Starting*/
 
-.heroBody {
-    /* border: 1px solid black; */
-    padding-bottom: 5rem;
-    padding-right: 15rem;
-}
-
 
 .heroSection {
     /* background-image: url(./assets/img/home-bg.jpg); */
@@ -332,7 +322,7 @@ footer {
 
 .heroBox p {
     font-family: "Nunito Sans", serif;
-    font-size: 1.6rme;
+    font-size: 1.6rem;
     color: #212529;
     font-weight: 300;
     margin-bottom: 2rem;
@@ -343,15 +333,12 @@ footer {
     padding: 8rem 0rem 0rem rem;
 } */
 
-button {
-    font-size: 2.2rem;
-}
 
 
 .heroBox {
     /* background-color: #00b7ff; */
     width: 50%;
-    height: auto;
+    height: 100%;
 }
 
 /* Hero Section code Ending */
@@ -370,10 +357,12 @@ button {
 
 .listBlock {
     padding: 0rem 1.5rem;
+    /* background-color: #00ffe0; */
 }
 
 .menuBox {
     padding: 1.5rem;
+    /* background-color: #00ffe0; */
 }
 
 /* Our Menu code Ending*/
@@ -386,6 +375,7 @@ button {
 }
 
 .facilityBox {
+    /* background-color: #00ffe0; */
     padding-bottom: 2rem;
 }
 
@@ -416,7 +406,7 @@ button {
 
 .popularContainer {
     max-width: 950px;
-    height: auto;
+    margin: auto;
 }
 
 
@@ -450,16 +440,16 @@ button {
 
 .galleryGalBody figure img {
     padding: 0.5rem;
+    /* background-color: #00ffe0; */
 }
 
 /* Gallery code Ending */
 
 /* Team code Starting */
 
-.teamCOntainer {
+.teamContainer {
     max-width: 950px;
-    height: auto;
-
+    margin: auto;
 }
 
 .teamBox figure img {
@@ -541,11 +531,15 @@ h3 {
     margin: 0rem 0rem 2.8rem 0rem;
 }
 
-.text input:active {
-    box-shadow: 0 0 20px #00ffe0, 0 0 40px #00ffe0, 0 0 60px #00ffe0;
-    transform: scale(0.98);
-}
 
+
+/* Stronger blue glow when clicked */
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border: 1px solid dodgerblue;
+    box-shadow: 0 0 6px dodgerblue;
+    outline: none;
+}
 
 /* Contact code ending */
 
@@ -569,7 +563,7 @@ h3 {
     padding: 1rem;
     border-radius: 7rem;
     color: #fff;
-    font-size: 4rem;
+    font-size: 4.8rem;
     margin-bottom: 3rem;
 }
 
@@ -578,17 +572,9 @@ h3 {
     font-family: "Nunito Sans", serif;
     color: #212529;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1;
     margin-bottom: 1rem;
-}
-
-.locationBody p {
-    font-family: "Nunito Sans", serif;
-    font-size: 2rem;
-    color: #212529;
-    font-weight: 400;
-    margin-bottom: 5rem;
 }
 
 .locationLocBody {
@@ -620,10 +606,6 @@ h3 {
 span {
     /* background-color: #0eb8ce; */
     color: #be9c79;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: 0.1rem;
 }
 
 /* Contact Icons code ending*/
@@ -652,17 +634,17 @@ span {
         display: block;
         position: absolute;
         top: 2rem;
-        right: 3rem;
+        right: 6rem;
     }
 
     .logoBox .navLinks {
         display: none;
-        
+
     }
 
-    .logoBox ul{
+    .logoBox ul {
         flex-direction: column;
-        padding-left: 35rem;
+        padding-left: 43rem;
 
     }
 
@@ -670,6 +652,28 @@ span {
         display: block;
         /* display: flex; */
         /* background-color: #7e4242; */
+    }
+
+    h1 {
+        font-size: 3.3rem;
+        /* background-color: #00ffe0; */
+    }
+
+    .heroBlock {
+        padding-left: 5rem;
+    }
+
+    .heroBox p {
+        font-size: 1.6rem;
+    }
+
+    .teamTeaBody figure img {
+        padding: 0rem 7rem;
+    }
+
+    .locationLocBody {
+        padding: 0rem 3rem;
+        text-align: center;
     }
 
 }
